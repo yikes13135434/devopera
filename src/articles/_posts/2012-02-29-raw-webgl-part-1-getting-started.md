@@ -3,7 +3,7 @@ title: 'Raw WebGL 101 — Part 1: Getting Started'
 authors:
 - erik-moller
 - chris-mills
-intro: 'WebGL allows you to create real 3D content and render it in a web browser. This article series provides a gentle introduction to writing raw WebGL, rendering 3D creations without relying on libraries. In this part we aim to get you set up and started, concluding by running through a simple example.'
+intro: 'WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. WebGL is fully integrated with other web standards, allowing GPU-accelerated usage of physics and image processing and effects as part of the web page canvas. WebGL allows you to create real 3D content and render it in a web browser. This article series provides a gentle introduction to writing raw WebGL, rendering 3D creations without relying on libraries. In this part we aim to get you set up and started, concluding by running through a simple example.'
 tags:
 - webgl
 - canvas
@@ -81,9 +81,15 @@ If you save and run this page, it should give you a blank canvas, with a default
 
 Note: The canvas has been created with dimensions of 300×150 pixels — this is the default if you don’t specify your own width and height.
 
-Note: WebGL code will seem rather complicated to many of you: being based on OpenGL, it is actually close to C++ code. For those of you wanting to understand it in depth, you should consult a set of C++ tutorials such as [cplusplus.com/doc/tutorial][9].
+Note: WebGL code will seem rather complicated to many of you: being based on OpenGL, it is actually close to C++ code. For those of you wanting to understand it in depth, you should consult [C++ tutorials][9] website.
 
-[9]: http://www.cplusplus.com/doc/tutorial/
+[9]: http://lucid4tech.com/
+
+## Example
+
+In this [WebGL Example][4231], we create a canvas and within it render a rotating square using WebGL. The coordinate system we use to represent our scene is the same as the canvas's coordinate system. That is, (0, 0) is at the top-left corner and the bottom-right corner is at (600, 460). This example demonstrates the simple animation of a one-color shape. Topics examined are adapting to aspect ratio differences, a function to build shader programs from sets of multiple shaders, and the basics of drawing in WebGL.
+
+[4231]: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Basic_2D_animation_example
 
 ## Drawing something meaningful
 
